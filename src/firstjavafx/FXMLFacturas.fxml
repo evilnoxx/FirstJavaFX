@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="firstjavafx.FXMLFacturasController">
+  <children>
+    <SplitPane dividerPositions="0.2976588628762542" focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="137.0">
+          <children>
+            <Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <expandedPane>
+                <TitledPane fx:id="x1" animated="false" text="untitled">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+              </expandedPane>
+              <panes>
+                <TitledPane animated="false" text="untitled">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+                <fx:reference source="x1" />
+              </panes>
+            </Accordion>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="249.0">
+          <children>
+            <FlowPane prefHeight="398.0" prefWidth="417.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <children>
+                <Button fx:id="BackButton" mnemonicParsing="false" onAction="#goBack" text="Voltar">
+                  <font>
+                    <Font name="System Bold" size="16.0" />
+                  </font>
+                </Button>
+                <CheckBox mnemonicParsing="false" text="CheckBox" />
+                <ColorPicker />
+                <ListView prefHeight="200.0" prefWidth="200.0" />
+              </children>
+            </FlowPane>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
